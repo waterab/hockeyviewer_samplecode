@@ -1,12 +1,10 @@
 import pandas as pd
 from pandas.io.json import json_normalize
-
-# Function for requesting json data from url
 import requests
 from bs4 import BeautifulSoup
 import json
-from pandas.io.json import json_normalize
 
+# Function for requesting json data from url
 def nhlrequest(url):
     headers = {
          'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
